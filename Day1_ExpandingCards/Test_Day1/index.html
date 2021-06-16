@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding + Progress</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/Day1_ExpandingCards/Test_Day1/styels.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel">
+            <ul class="panel__list">
+                <li class="panel__item active" style="background-image: url('/Day1_ExpandingCards/images/spring.jpg');">
+                    <h3 class="panel__title">spring</h3>
+                </li>
+                <li class="panel__item" style="background-image: url('/Day1_ExpandingCards/images/summer.jpg');">
+                    <h3 class="panel__title">summer</h3>
+                </li>
+                <li class="panel__item" style="background-image: url('/Day1_ExpandingCards/images/fall_2.jpg');">
+                    <h3 class="panel__title">fall</h3>
+                </li>
+                <li class="panel__item" style="background-image: url('/Day1_ExpandingCards/images/winter.jpg');">
+                    <h3 class="panel__title">winter</h3>
+                </li>
+                <li class="panel__item " style="background-image: url('/Day1_ExpandingCards/images/beach_2.jpg');">
+                    <h3 class="panel__title">beach</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active-progress">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+        <div class="btn-primary">
+            <button class="btn" id="prev" disabled>Prev</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+    </div>
+    <script src="/Day1_ExpandingCards/Test_Day1/main.js"></script>
+</body>
+
+</html>
