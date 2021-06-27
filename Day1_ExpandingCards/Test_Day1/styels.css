@@ -1,8 +1,8 @@
 .container {
-    width: 60%;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
+   width: 60%;
+   margin: 0 auto;
+   padding-left: 2rem;
+   padding-right: 2rem;
 }
 .panel__list {
     display: flex;
@@ -10,18 +10,18 @@
     align-items: center;
 }
 .panel__item {
-    background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 100%;
 
-    position: relative;
     width: 100%;
     height: 80vh;
+    border-radius: 60px;
     margin: 10px;
-    border-radius: 50px;
 
     flex: 0.5;
-    transition: flex .5s ease-in;
+    position: relative;
+    transition: flex 0.4s ease-in;
 }
 .panel__item.active {
     flex: 5;
@@ -30,6 +30,7 @@
     opacity: 1;
 }
 .panel__title {
+    opacity: 0;
     position: absolute;
     bottom: 30px;
     left: 20px;
@@ -37,21 +38,18 @@
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-
     opacity: 0;
-    transition: opacity .5s ease;
 }
 .container-2 {
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     height: 20vh;
-    margin: 0 auto;
     overflow: hidden;
-    text-align: center;
-}
+}   
 .progress-container {
     display: flex;
     justify-content: space-between;
@@ -86,8 +84,8 @@
 }
 .circle {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     width: 30px;
     height: 30px;
@@ -96,7 +94,7 @@
 
     background-color: #fff;
     color: #999;
-    transition: .4s ease;
+    transition: color .4s ease-in;
 }
 .circle.active-progress {
     border-color: #3498db;
@@ -104,9 +102,9 @@
 .btn {
     padding: 8px 30px;
     margin: 5px;
-
     border: none;
     border-radius: 6px;
+    
     font-size: 14px;
     cursor: pointer;
 
